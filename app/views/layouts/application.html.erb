@@ -6,12 +6,18 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <style media="screen">
+      body {
+        color: lightblue;
+      }
+    </style>
   </head>
 
   <body>
     <nav>
-      <%= link_to 'Home', home_path %>
+      <%= link_to 'Home', index_path %>
       <%= link_to 'About Me', about_path %>
+      <%= link_to 'Contact Me', contact_path %>
     </nav>
     <%= yield %>
   </body>
